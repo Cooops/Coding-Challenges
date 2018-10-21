@@ -21,7 +21,7 @@ address
 Case should be maintained.
 """
 
-# MY SOLUTION (PostgreSQL is 
+# MY SOLUTION (PostgreSQL is kind of bugged on CodeWars atm, so they wouldn't accept this even though it's valid.)
 UPDATE repositories
 SET address = REGEXP_REPLACE(address, '[[:digit:]]', '!', 'g')
 RETURNING *
