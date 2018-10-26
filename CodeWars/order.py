@@ -28,6 +28,6 @@ def order(sentence):
     # sort the dict by the using the .get method on our dict to force-sort by the values (digits)
     return ' '.join(sorted(stack, key=stack.get))
 
-# TOP SOLUTION (mine is infinitely more readable ^^)
+# TOP SOLUTION
 def order(sentence):
     return " ".join(sorted(sentence.split(), key=lambda x: int(filter(str.isdigit, x))))
